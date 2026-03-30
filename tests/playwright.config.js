@@ -10,6 +10,7 @@ export default defineConfig({
     headless: false,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
+    storageState: 'auth.json',
   },
 
   projects: [
