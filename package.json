@@ -1,7 +1,7 @@
 {
   "name": "nepalniwas_au",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automation Code of Nepal  Niwas",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
@@ -14,9 +14,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.58.2"
+    "@playwright/test": "^1.59.1"
   },
   "dependencies": {
     "dotenv": "^17.3.1"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MEELAN2001/NepalNiwas-Automation.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MEELAN2001/NepalNiwas-Automation/issues"
+  },
+  "homepage": "https://github.com/MEELAN2001/NepalNiwas-Automation#readme"
 }
