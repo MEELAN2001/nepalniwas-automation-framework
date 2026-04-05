@@ -98,6 +98,3 @@ Feel free to fork the repository and contribute by submitting pull requests.
 
 This project is intended for learning and internal use.
 
----
-
-If you want, I can also make a **more impressive GitHub README (with badges, screenshots, and status sections)** to make it look more professional for recruiters.
