@@ -3,6 +3,7 @@ import { login } from '../../../../utils/auth';
 import { fillStep01Overview } from './step-helpers/step01-overview.js';
 import { fillStep02aboutyourplace, fillStep02Overview } from './step-helpers/step02-about-your-place.js';
 import { fillStep03propertytype } from './step-helpers/step03-property-type.js';
+import { fillStep04stepdescription } from './step-helpers/step04-step-description.js';
 
 // 🔥 ADD THIS BLOCK
 test.beforeEach(async ({ page }) => {
@@ -16,4 +17,5 @@ test('Full add sale flow', async ({ page }) => {
   await fillStep01Overview(page);
   await fillStep02aboutyourplace(page);
   await fillStep03propertytype(page);
+  await fillStep04stepdescription(page);
 });
