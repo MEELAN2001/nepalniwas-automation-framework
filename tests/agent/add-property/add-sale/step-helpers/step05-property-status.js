@@ -20,8 +20,7 @@ export async function fillStep05PropertyStatus(page) {
 
     // Select the 'Semi-Furnished' option by clicking the heading (if clickable)
    await page.getByRole('heading', { name: /Semi-Furnished/i }).click();
-
-   await page.waitForTimeout(5000); // Short wait for UI update
    
+   await page.waitForTimeout(3000); // Short wait for UI update
    await page.getByRole('button', { name: 'Next' }).click();
 }
