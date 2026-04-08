@@ -7,6 +7,7 @@ import { fillStep04stepdescription } from './step-helpers/step04-step-descriptio
 import { fillStep06location } from './step-helpers/step06-location.js';
 import { fillStep05PropertyStatus } from './step-helpers/step05-property-status.js';
 import { fillStep07newlocation } from './step-helpers/step07-new-location.js';
+import { fillStep08PropertyBasics } from './step-helpers/step08-property-basics.js';
 
 // 🔥 ADD THIS BLOCK
 test.beforeEach(async ({ page }) => {
@@ -30,4 +31,5 @@ test('Full add sale flow', async ({ page }) => {
   await fillStep05PropertyStatus(page);
   await fillStep06location(page);
   await fillStep07newlocation(page);
+  await fillStep08PropertyBasics(page);
 });

@@ -48,6 +48,12 @@ export async function fillStep07newlocation(page) {
   await page.waitForTimeout(5500);
   
   // Click next button again
+  const locationUrl = page.url();
   await nextButton.click();
   
+  // Wait for navigation to complete (away from location page)
+  await page.waitForURL((url) => !url.href.includes('/location'), { timeout: 15000 });
+  
+  // Additional wait for page content to render
+  await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {});
 }
