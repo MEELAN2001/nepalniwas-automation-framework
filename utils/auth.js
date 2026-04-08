@@ -1,7 +1,8 @@
 import 'dotenv/config';
 
 export async function login(page) {
-  await page.goto(process.env.BASE_URL + '/login');
+  const baseUrl = process.env.BASE_URL || 'https://staging.nepalniwas.com';
+  await page.goto(`${baseUrl}/login`);
 
   // Click Continue with Email
   await page.getByRole('button', { name: 'Continue with Email' }).click();
@@ -15,5 +16,5 @@ export async function login(page) {
   await page.getByRole('button', { name: 'Continue', exact: true }).click();
 
   // Wait for home page after login
-  await page.waitForURL('https://staging.nepalniwas.com/users/home');
+  await page.waitForURL('**/users/home');
 }
