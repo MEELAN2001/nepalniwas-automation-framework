@@ -1,5 +1,5 @@
-import { fillStep10RoadDetails } from "./step-helpers/step10-roaddetails.js";
+import { fillStep10area } from "./step-helpers/step10-area.js";
 
-test('Step 10 Road Details', async ({ page }) => {
-  await fillStep10RoadDetails(page);
+test('Step 10 Area Details', async ({ page }) => {
+  await fillStep10area (page);
 });
