@@ -6,6 +6,7 @@ import { fillStep03propertytype } from './step-helpers/step03-property-type.js';
 import { fillStep04stepdescription } from './step-helpers/step04-step-description.js';
 import { fillStep06location } from './step-helpers/step06-location.js';
 import { fillStep05PropertyStatus } from './step-helpers/step05-property-status.js';
+import { fillStep07newlocation } from './step-helpers/step07-new-location.js';
 
 // 🔥 ADD THIS BLOCK
 test.beforeEach(async ({ page }) => {
@@ -14,10 +15,10 @@ test.beforeEach(async ({ page }) => {
 
 // ✅ Your test (no login here)
 test('Full add sale flow', async ({ page }) => {
+  test.setTimeout(120000);
+
   // Navigate to the home page after login
   await page.goto('https://staging.nepalniwas.com/users/home');
-
-  await page.waitForTimeout(5000); // Wait for the page to load
 
   // Navigate to the overview page 
   await page.goto('https://staging.nepalniwas.com/users/sale/overview');
@@ -28,4 +29,5 @@ test('Full add sale flow', async ({ page }) => {
   await fillStep04stepdescription(page);
   await fillStep05PropertyStatus(page);
   await fillStep06location(page);
+  await fillStep07newlocation(page);
 });
