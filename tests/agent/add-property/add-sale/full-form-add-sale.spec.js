@@ -14,6 +14,7 @@ import { fillStep11RoadDetails } from './step-helpers/step011-road-details.js';
 import { fillStep012Utilities } from './step-helpers/step012-utilities.js';
 import { fillStep013Photos } from './step-helpers/step013-photos.js';
 import { fillStep014VideoTour } from './step-helpers/step014-video-tour.js';
+import { fillStep015Amenities } from './step-helpers/step015-amenities.js';
 
 // 🔥 ADD THIS BLOCK
 test.beforeEach(async ({ page }) => {
@@ -44,5 +45,6 @@ test('Full add sale flow', async ({ page }) => {
   await fillStep012Utilities(page);
   await fillStep013Photos(page);
   await fillStep014VideoTour(page);
+  await fillStep015Amenities(page);
 
 });
