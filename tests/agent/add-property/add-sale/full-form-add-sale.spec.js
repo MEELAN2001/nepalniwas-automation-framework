@@ -12,6 +12,7 @@ import { fillStep09MakeYourPlace } from './step-helpers/step09-makeyourplace.js'
 import { fillStep10area } from './step-helpers/step10-area.js';
 import { fillStep11RoadDetails } from './step-helpers/step011-road-details.js';
 import { fillStep012Utilities } from './step-helpers/step012-utilities.js';
+import { fillStep013Photos } from './step-helpers/step013-photos.js';
 
 // 🔥 ADD THIS BLOCK
 test.beforeEach(async ({ page }) => {
@@ -20,7 +21,7 @@ test.beforeEach(async ({ page }) => {
 
 // ✅ Your test (no login here)
 test('Full add sale flow', async ({ page }) => {
-  test.setTimeout(120000);
+  test.setTimeout(180000);
 
   // Navigate to the home page after login
   await page.goto('https://staging.nepalniwas.com/users/home');
@@ -40,5 +41,6 @@ test('Full add sale flow', async ({ page }) => {
   await fillStep10area(page);
   await fillStep11RoadDetails(page);
   await fillStep012Utilities(page);
+  await fillStep013Photos(page);
 
 });

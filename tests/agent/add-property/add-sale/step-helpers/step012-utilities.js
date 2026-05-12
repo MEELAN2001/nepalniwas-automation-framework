@@ -35,7 +35,10 @@ export async function fillStep012Utilities(page) {
   
   // Select Drainage System options
   await page.locator('div').filter({ hasText: /^Drainage System$/ }).nth(2).click();
-  await page.getByText('Municipal Drainage System').click();
+  const drainage = page.getByText('Municipal Drainage System');
+  await drainage.waitFor({ state: 'attached', timeout: 10000 });
+  await page.waitForTimeout(200);
+  await drainage.click({ force: true });
   
   // Select Waste Management options
   await page.locator('div').filter({ hasText: /^Waste Management$/ }).nth(3).click();

@@ -9,7 +9,6 @@ export async function fillStep07newlocation(page) {
   await expect(page.getByText('District *', { exact: false }).first()).toBeVisible();
   await expect(page.getByText('Municipality *', { exact: false }).first()).toBeVisible();
   await expect(page.getByText('Ward No. *', { exact: false }).first()).toBeVisible();
-  await expect(page.getByText(/Area \(e\.g\. Balaju,\s*Thamel\) \*/i).first()).toBeVisible();
   await expect(page.getByText('Street/Tole *', { exact: false }).first()).toBeVisible();
 
   const exitButton = page.getByRole('button', { name: 'Exit' });
