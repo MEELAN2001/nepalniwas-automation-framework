@@ -1,3 +1,8 @@
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33)
+![QA Automation](https://img.shields.io/badge/QA-Automation-blue)
+![CI/CD](https://img.shields.io/badge/CI-CD-orange)
+![TypeScript](https://img.shields.io/badge/JavaScript-3178C6)
+
 # 🏠 Nepalniwas Automation Framework
 
 A scalable end-to-end test automation framework for the **Nepal Niwas** platform, built to ensure application reliability, reduce manual testing effort, and improve software quality through structured QA engineering practices.
