@@ -1,19 +1,21 @@
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33)
 ![QA Automation](https://img.shields.io/badge/QA-Automation-blue)
 ![CI/CD](https://img.shields.io/badge/CI-CD-orange)
-![TypeScript](https://img.shields.io/badge/JavaScript-3178C6)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E)
 
 # 🏠 Nepalniwas Automation Framework
 
-A scalable end-to-end test automation framework for the **Nepal Niwas** platform, built to ensure application reliability, reduce manual testing effort, and improve software quality through structured QA engineering practices.
+A production-style **QA Automation Framework** built using Playwright with JavaScript for end-to-end testing of the Nepal Niwas platform.
+
+This framework focuses on scalable automation architecture, real-world UI validation, and CI/CD-ready test execution.
 
 ---
 
 ## 📌 Overview
 
-Nepalniwas Automation Framework is designed to validate real-world user workflows, UI functionality, and system stability using modern test automation practices.
+Nepalniwas Automation Framework is designed to simulate real user workflows and ensure application stability through structured QA automation engineering practices.
 
-This project demonstrates a production-style QA Automation approach using Playwright, Page Object Model (POM), and maintainable test architecture.
+It demonstrates a **real-world SDET-style automation approach** using Playwright, JavaScript, and Page Object Model (POM) design principles.
 
 ---
 
@@ -21,11 +23,12 @@ This project demonstrates a production-style QA Automation approach using Playwr
 
 * End-to-end UI automation testing
 * Real-world user workflow validation
-* Reusable Page Object Model (POM) architecture
-* Modular and scalable test structure
-* Regression testing support
-* Structured test execution and reporting
-* Easy extensibility for new test cases
+* Page Object Model (POM) architecture
+* Modular and scalable framework design
+* Regression test coverage
+* CI/CD-ready automation structure
+* Reusable utilities and test components
+* Easy extension for new test scenarios
 
 ---
 
@@ -34,29 +37,30 @@ This project demonstrates a production-style QA Automation approach using Playwr
 * **Automation Framework:** Playwright
 * **Language:** JavaScript
 * **Test Runner:** Playwright Test
-* **Design Pattern:** Page Object Model (POM)
+* **Architecture:** Page Object Model (POM)
 * **Reporting:** Playwright HTML Reporter
+* **CI/CD:** GitHub Actions (optional integration)
 
 ---
 
 ## 🏗️ Framework Architecture
 
 * Page Object Model (POM) design pattern
-* Modular test case structure
-* Reusable utility functions
-* Config-driven test execution
-* Maintainable automation layers (tests / pages / utils)
+* Modular structure (tests / pages / utils)
+* Config-driven execution
+* Reusable helper functions
+* Maintainable and scalable automation design
 
 ---
 
 ## 📂 Project Structure
 
-```
+```id="js1"
 Nepalniwas_Automation/
 │── tests/            # Test cases
 │── pages/            # Page Object Models
 │── utils/            # Helper functions
-│── fixtures/         # Test data and setup
+│── fixtures/         # Test data & setup
 │── config/           # Configuration files
 │── reports/          # Test execution reports
 ```
@@ -65,21 +69,21 @@ Nepalniwas_Automation/
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone the repository
+### 1. Clone repository
 
-```bash
+```bash id="js2"
 git clone <repository-url>
 ```
 
-### 2. Navigate to project directory
+### 2. Navigate to project
 
-```bash
+```bash id="js3"
 cd Nepalniwas_Automation
 ```
 
 ### 3. Install dependencies
 
-```bash
+```bash id="js4"
 npm install
 ```
 
@@ -89,19 +93,19 @@ npm install
 
 ### Run all tests
 
-```bash
+```bash id="js5"
 npx playwright test
 ```
 
 ### Run in headed mode
 
-```bash
+```bash id="js6"
 npx playwright test --headed
 ```
 
 ### Run specific test
 
-```bash
+```bash id="js7"
 npx playwright test <test-file-name>
 ```
 
@@ -109,38 +113,38 @@ npx playwright test <test-file-name>
 
 ## 📊 Test Reports
 
-Generate and view execution reports:
+Generate and view HTML report:
 
-```bash
+```bash id="js8"
 npx playwright show-report
 ```
 
 ---
 
-## 🎯 Objectives
+## 🎯 Engineering Objectives
 
 * Improve software quality through automation
 * Ensure regression stability across releases
-* Detect bugs early in development cycle
+* Detect defects early in development lifecycle
 * Reduce manual QA effort
-* Support continuous testing in CI/CD pipelines
+* Enable continuous testing in CI/CD pipelines
 
 ---
 
-## 🔄 Future Improvements
+## 🔮 Future Enhancements
 
-* CI/CD integration using GitHub Actions or Jenkins
-* Advanced reporting with Allure Reports
-* Cross-browser execution (Chrome, Firefox, Edge)
-* Parallel test execution optimization
-* API testing integration (future scope)
+* GitHub Actions CI/CD pipeline integration
+* Allure reporting integration
+* Cross-browser testing expansion
+* Parallel execution optimization
+* API testing layer expansion
 
 ---
 
 ## 👨‍💻 Author
 
 **Milan Bomjan Tamang**
-QA Automation Engineer | Playwright | Cypress | API Testing | CI/CD
+QA Automation Engineer | Playwright | JavaScript | API Testing | CI/CD
 
 * GitHub: https://github.com/MEELAN2001
 * Portfolio: http://milanbomjantamang.com.np
@@ -150,4 +154,4 @@ QA Automation Engineer | Playwright | Cypress | API Testing | CI/CD
 
 ## 📄 License
 
-This project is intended for learning, demonstration, and QA engineering practice purposes.
+This project is for learning, demonstration, and QA engineering practice purposes.
