@@ -1,25 +1,48 @@
-# 🏠 Nepalniwas Automation
+# 🏠 Nepalniwas Automation Framework
 
-Automation testing project for the **Nepal Niwas** platform, focused on improving software quality through structured and maintainable test automation.
+A scalable end-to-end test automation framework for the **Nepal Niwas** platform, built to ensure application reliability, reduce manual testing effort, and improve software quality through structured QA engineering practices.
+
+---
 
 ## 📌 Overview
 
-This repository contains automated test scripts designed to validate core functionalities of the Nepal Niwas system. It helps reduce manual testing effort, improve accuracy, and ensure consistent application behavior.
+Nepalniwas Automation Framework is designed to validate real-world user workflows, UI functionality, and system stability using modern test automation practices.
 
-## 🚀 Features
+This project demonstrates a production-style QA Automation approach using Playwright, Page Object Model (POM), and maintainable test architecture.
 
-* Automated functional testing
-* End-to-end test scenarios
-* Reusable Page Object Model (POM) structure
-* Clear test reporting
-* Easy to scale and extend
+---
+
+## 🚀 Key Features
+
+* End-to-end UI automation testing
+* Real-world user workflow validation
+* Reusable Page Object Model (POM) architecture
+* Modular and scalable test structure
+* Regression testing support
+* Structured test execution and reporting
+* Easy extensibility for new test cases
+
+---
 
 ## 🛠️ Tech Stack
 
-* **Framework:** Playwright
-* **Language:** JavaScript 
+* **Automation Framework:** Playwright
+* **Language:** JavaScript
 * **Test Runner:** Playwright Test
-* **Reporting:** Built-in HTML Reporter
+* **Design Pattern:** Page Object Model (POM)
+* **Reporting:** Playwright HTML Reporter
+
+---
+
+## 🏗️ Framework Architecture
+
+* Page Object Model (POM) design pattern
+* Modular test case structure
+* Reusable utility functions
+* Config-driven test execution
+* Maintainable automation layers (tests / pages / utils)
+
+---
 
 ## 📂 Project Structure
 
@@ -30,71 +53,96 @@ Nepalniwas_Automation/
 │── utils/            # Helper functions
 │── fixtures/         # Test data and setup
 │── config/           # Configuration files
-│── reports/          # Test reports
+│── reports/          # Test execution reports
 ```
+
+---
 
 ## ⚙️ Setup Instructions
 
-1. Clone the repository:
+### 1. Clone the repository
 
-   ```bash
-   git clone <repository-url>
-   ```
-2. Navigate to the project:
+```bash
+git clone <repository-url>
+```
 
-   ```bash
-   cd Nepalniwas_Automation
-   ```
-3. Install dependencies:
+### 2. Navigate to project directory
 
-   ```bash
-   npm install
-   ```
+```bash
+cd Nepalniwas_Automation
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+---
 
 ## ▶️ Running Tests
 
-* Run all tests:
+### Run all tests
 
-  ```bash
-  npx playwright test
-  ```
-* Run in headed mode:
+```bash
+npx playwright test
+```
 
-  ```bash
-  npx playwright test --headed
-  ```
-* Run specific test:
+### Run in headed mode
 
-  ```bash
-  npx playwright test <test-file-name>
-  ```
+```bash
+npx playwright test --headed
+```
 
-## 📊 Reports
+### Run specific test
 
-View the test report after execution:
+```bash
+npx playwright test <test-file-name>
+```
+
+---
+
+## 📊 Test Reports
+
+Generate and view execution reports:
 
 ```bash
 npx playwright show-report
 ```
 
-## 🔄 Future Improvements
-
-* CI/CD pipeline integration (GitHub Actions / Jenkins)
-* Advanced reporting (Allure)
-* Cross-browser and parallel execution enhancements
+---
 
 ## 🎯 Objectives
 
-* Improve test coverage
-* Ensure application stability
-* Detect bugs early
-* Support efficient QA processes
+* Improve software quality through automation
+* Ensure regression stability across releases
+* Detect bugs early in development cycle
+* Reduce manual QA effort
+* Support continuous testing in CI/CD pipelines
 
-## 🤝 Contribution
+---
 
-Feel free to fork the repository and contribute by submitting pull requests.
+## 🔄 Future Improvements
+
+* CI/CD integration using GitHub Actions or Jenkins
+* Advanced reporting with Allure Reports
+* Cross-browser execution (Chrome, Firefox, Edge)
+* Parallel test execution optimization
+* API testing integration (future scope)
+
+---
+
+## 👨‍💻 Author
+
+**Milan Bomjan Tamang**
+QA Automation Engineer | Playwright | Cypress | API Testing | CI/CD
+
+* GitHub: https://github.com/MEELAN2001
+* Portfolio: http://milanbomjantamang.com.np
+* LinkedIn: https://linkedin.com/in/milanbomjantamang
+
+---
 
 ## 📄 License
 
-This project is intended for learning and internal use.
-
+This project is intended for learning, demonstration, and QA engineering practice purposes.
