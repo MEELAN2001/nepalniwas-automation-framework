@@ -1,9 +1,8 @@
-// playwright.config.js
 import 'dotenv/config';
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-  testDir: '.',
+  testDir: './tests',
   timeout: 30000,
 
   use: {
